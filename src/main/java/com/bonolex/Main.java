@@ -28,7 +28,7 @@ import java.util.Properties;
 public class Main {
     public static void main(String[] args) throws Exception {
         Properties properties = new Properties();
-        try (FileInputStream fileInputStream = new FileInputStream("src/main/resources/application.properties")) {
+        try (FileInputStream fileInputStream = new FileInputStream("src/main/resources/heroku.properties")) {
             properties.load(fileInputStream);
         }
         //Configure datasource from properties
