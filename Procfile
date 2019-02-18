@@ -1,1 +1,1 @@
-web: find / -name *.jar; java $JAVA_OPTS -jar online-shop-1.0-SNAPSHOT-jar-with-dependencies.jar --port $PORT target/*.war
+web: find / -name *.jar; java $JAVA_OPTS -jar /app/target/online-shop-1.0-SNAPSHOT-jar-with-dependencies.jar --port $PORT target/*.war
