@@ -68,7 +68,7 @@ public class Main {
 
         context.addFilter(new FilterHolder(new AuthFilter(defaultSecurityService)), "/product/*", EnumSet.of(DispatcherType.REQUEST));
 
-        Server server = new Server(3000);
+        Server server = new Server(Integer.parseInt(args[0]));
         server.setHandler(context);
 
         server.start();
